@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jackpot Spinner</title>
+
+    <style type="text/css" rel="stylesheet">
+        #Slot_machine {
+            overflow: hidden;
+        }
+
+        .items {}
+
+        #items1 img {
+            display: block;
+            margin-top: 12px;
+        }
+
+        #items2 img {
+            display: block;
+            margin-top: 12px;
+        }
+
+        #items1,
+        #items2,
+        #items3 {
+            position: relative;
+            display: inline-block;
+            padding: 8px;
+            top: -52px;
+            align-items: center;
+        }
+
+        #items3 img {
+            display: block;
+            margin-top: 12px;
+        }
+
+        body {
+            background-color: aqua;
+        }
+
+        .myrow {
+            width: 260px;
+            margin: 4px auto;
+            padding: 0px;
+            position: absolute;
+            height: 185px;
+        }
+
+        #Slot_machine {
+            position: absolute;
+        }
+
+        #parent {
+            height: 116px;
+            width: 245px;
+            position: relative;
+            overflow: hidden;
+            margin-left: 18px;
+            margin-top: 20px;
+        }
+
+        #button {
+            top: -50px;
+            left: 16px;
+            height: 30px;
+            width: 200px;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <img src="img/Slot_machine.png" /> -->
+
+    <div class="row myrow">
+        <div id="Slot_machine"> <img src="img/Slot_machine.png" />
+            <div id="button">
+            </div>
+        </div>
+        <div id="parent">
+            <div class="col-sm-3 items" id="items1"></div>
+            <div class="col-sm-3 items" id="items2"></div>
+            <div class="col-sm-3 items" id="items3"></div>
+        </div>
+
+    </div>
+
+
+</body>
+<script src="js/spiner.js"></script>
+
+</html>
